@@ -12,11 +12,21 @@ let tailwindcss = require('tailwindcss');
  |
  */
 
- mix.js('resources/assets/js/app.js', 'public/js')
-     .sass('resources/assets/sass/index.scss', 'public/css/app.css')
-     .options({
-       processCssUrls: false,
-       postCss: [ tailwindcss('./tailwind.js') ],
-     });
+mix.js('resources/assets/js/app.js', 'public/js')
+  .sass('resources/assets/sass/index.scss', 'public/css/app.css')
+  .options({
+    processCssUrls: false,
+    postCss: [ tailwindcss('./tailwind.js') ],
+  });
 
- mix.browserSync('http://localhost:8000');
+/*
+|--------------------------------------------------------------------------
+| BrowserSync
+|--------------------------------------------------------------------------
+|
+| Keeps multiple browsers & devices in sync when building websites.
+| Uncomment to use. Not recommended for tailwind development.
+|
+*/
+
+// mix.browserSync('http://localhost:8000');
