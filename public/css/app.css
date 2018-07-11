@@ -6325,6 +6325,40 @@ table {
   z-index: auto;
 }
 
+/*
+|-------------------------------------------------------------------------------
+| Text Shadows
+|-------------------------------------------------------------------------------
+|*/
+
+.text-shadow-lightest {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.text-shadow-lighter {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.text-shadow-light {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.text-shadow-dark {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.text-shadow-darker {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+}
+
+.text-shadow-darkest {
+  text-shadow: 0 1px 2px black;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
